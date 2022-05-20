@@ -52,3 +52,52 @@
     height: 30px;
     background-color: var(--color-grey);
 }
+
+.app__navbar-smallscreen {
+    display: none;
+}
+
+.app__navbar-smallscreen_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-black);
+    transition: 0.5s ease;
+
+    flex-direction: column;
+    z-index: 5;
+}
+.app__navbar-smallscreen_overlay .overlay__close {
+    font-size: 27px;
+    color: var(--color-golden);
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.app__navbar-smallscreen-links {
+     list-style: none;
+}
+.app__navbar-smallscreen-links li {
+    margin: 2rem;
+    cursor: pointer;
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--font-base);
+    color: var(--color-golden);
+}
+.app__navbar-smallscreen-links li:hover {
+    color: var(--color-white);
+}
+
+@media screen and (max-width: 1150px){
+    .app__navbar-links {
+        display: none;
+    }
+    .app__navbar-smallscreen {
+        display: flex;
+    }
+}
