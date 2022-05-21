@@ -50,15 +50,14 @@
 .app__aboutus-content_history p,
  .app__aboutus-content_about p {
      margin: 4rem 0;
-     color: var(--color-grey);
 }
 
-@media screen and (min-width: 2000px){
+@media screen and (max-width: 2000px){
     .app__aboutus-content_knife img {
         height: 1119px;
     }
 }
-@media screen and (min-width: 900px){
+@media screen and (max-width: 900px){
     .app__aboutus-content {
         flex-direction: column;
     }
@@ -66,7 +65,7 @@
         margin: 4rem 0;
     }
 }
-@media screen and (min-width: 605px){
+@media screen and (max-width: 605px){
     .app__aboutus-overlay img {
         width: 80%;
         height: 320px;
