@@ -34,9 +34,7 @@
     margin: 2rem 4rem;
 }
 
-.app__aboutus-content_knife img {
-    height: 710px;
-}
+
 
 .app__aboutus-content_history {
     flex: 1;
@@ -54,7 +52,7 @@
 
 @media screen and (max-width: 2000px){
     .app__aboutus-content_knife img {
-        height: 1119px;
+        height: 600px;
     }
 }
 @media screen and (max-width: 900px){
