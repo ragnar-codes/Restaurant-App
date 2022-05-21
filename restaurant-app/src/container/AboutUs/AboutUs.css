@@ -12,7 +12,9 @@
     height: 415px;
     z-index: 0;
 }
-
+.headetext__cormorant {
+    color: var(--color-golden);
+}
 .app__aboutus-content {
     width: 100%;
     z-index: 2;
@@ -47,6 +49,26 @@
 }
 .app__aboutus-content_history p,
  .app__aboutus-content_about p {
-     margin: 2rem 0;
+     margin: 4rem 0;
      color: var(--color-grey);
- }
+}
+
+@media screen and (min-width: 2000px){
+    .app__aboutus-content_knife img {
+        height: 1119px;
+    }
+}
+@media screen and (min-width: 900px){
+    .app__aboutus-content {
+        flex-direction: column;
+    }
+    .app__aboutus-content_knife {
+        margin: 4rem 0;
+    }
+}
+@media screen and (min-width: 605px){
+    .app__aboutus-overlay img {
+        width: 80%;
+        height: 320px;
+    }
+}
